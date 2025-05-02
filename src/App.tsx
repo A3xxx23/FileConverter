@@ -1,25 +1,24 @@
-// App.js
-import { Link } from "react-router-dom";
-import { Navbar } from "./components/Navbar";
-import Home from "./components/Home"; // Asegúrate de que la ruta sea correcta
+import { Routes, Route } from 'react-router-dom';
+import { Navbar } from './components/Navbar';
+import FileToPDF from './pages/FiletoPDF';
+import ImageToPDF from './pages/ImagetoPDF';
+import UrlToPDF from './pages/URLtoPDF';
+import HTMLtoPDF from './pages/HTMLtoPDF';
+import Home from './components/Home';
 
 const App = () => {
   return (
-    <div className="flex flex-col w-full">
-      <header className="flex items-center py-4 px-5 lg:px-12 shadow-lg ">
-        <Link to={"/"}>
-          <img
-            src="/convertImage.png"
-            alt="FileConverter logo"
-            className="h-12"
-          />
-        </Link>
-
-        <Navbar />
-      </header>
-
-      {/* Renderiza Home en la ruta raíz */}
-      <Home />
+    <div className="h-screen flex flex-col">
+      <Navbar />
+      <main className="flex-1 p-4">
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/file-to-pdf" element={<FileToPDF />} />
+          <Route path="/image-to-pdf" element={<ImageToPDF />} />
+          <Route path="/url-to-pdf" element={<UrlToPDF />} />
+          <Route path="/html-to-pdf" element={<HTMLtoPDF />} />
+        </Routes>
+      </main>
     </div>
   );
 };

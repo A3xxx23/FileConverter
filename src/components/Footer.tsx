@@ -30,21 +30,19 @@ const SocialLinks = [
 export const Footer = () => {
   return (
     <footer>
-      <p>&copy; 2023 Your Company. All rights reserved.</p>
-
-      <div className="flex gap-2">
-                    {SocialLinks.map((link) => (
-                        <a 
-                            key={link.id} 
-                            href={link.href} 
-                            target="_blank"
-                            rel="noreferrer"
-                            className="hover:text-gray-500 border border-gray-500 w-10 h-10 flex items-center justify-center rounded-full transition-all"
-                        >
-                            <link.icon className="w-6 h-6" />
-                        </a>
-                    ))}
-                </div>
+      <div className="flex items-center justify-center -mt-0 sm:mt-0 gap-3">
+        {SocialLinks.map((link) => (
+            <a 
+                key={link.id} 
+                href={link.href} 
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-gray-500 flex items-center justify-center rounded-full transition-all"
+            >
+                <link.icon className="w-7 h-7" />
+            </a>
+        ))}
+      </div>
     </footer>
   );
 };
