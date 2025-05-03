@@ -28,7 +28,7 @@ export const Navbar = () => {
               to={link.href}
               className={({ isActive }) =>
                 isActive
-                  ? 'text-gray-300 font-semibold'
+                  ? 'text-gray-400 font-semibold'
                   : 'hover:text-gray-400 transition'
               }
             >
@@ -54,8 +54,8 @@ export const Navbar = () => {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="fixed inset-0 bg-white bg-opacity-95 flex flex-col items-center justify-center space-y-6 text-xl z-40">
-        <Link to="/" className="flex justify-items-center ">
-          <img src="/convertImage.png" alt="FileConverter logo" className="h-20" />
+        <Link to="/" className="flex justify-items-center py-4 ">
+          <img src="/convertImage.png" alt="FileConverter logo" className="h-26" />
         </Link>
 
         <button
@@ -69,7 +69,7 @@ export const Navbar = () => {
             <NavLink
               key={link.id}
               to={link.href}
-              className="text-black font-semibold transition hover:text-gray-300"
+              className="text-black font-semibold transition hover:text-gray-600"
               onClick={() => setMenuOpen(false)}
             >
               {link.title}

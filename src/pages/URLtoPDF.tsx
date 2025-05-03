@@ -1,8 +1,11 @@
+import { FileUpload } from "../components/FileUpload";
+
 export const URLtoPDF = () => {
   return (
-    <div>
-        <p>URL to PDF</p>
-    </div>
+    <FileUpload
+    tittle="URL to PDF"
+    description="Upload a PDF from a URL"
+    />
   )
 };
 

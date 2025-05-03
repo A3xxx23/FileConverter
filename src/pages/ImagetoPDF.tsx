@@ -1,8 +1,11 @@
+import { FileUpload } from "../components/FileUpload"
+
 export const ImagetoPDF = () => {
     return (
-        <div>
-            <p>ImagetoPDF</p>
-        </div>
+        <FileUpload
+        tittle="Image to PDF"
+        description="Convert image to PDF"        
+        />
     )
 }
 

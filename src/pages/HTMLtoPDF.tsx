@@ -1,8 +1,11 @@
+import { FileUpload } from "../components/FileUpload";
+
 export const HTMLtoPDF = () => {
     return (
-        <div>
-            <p>HTML to PDF</p>
-        </div>
+        <FileUpload
+        tittle="HTML to PDF"
+        description="Convert HTML to PDF"
+        />
     )
 }
 
