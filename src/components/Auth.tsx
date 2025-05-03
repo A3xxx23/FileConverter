@@ -35,20 +35,20 @@ const Auth = () => {
   };
 
   return (
-    <div className="flex justify-center mt-8">
+    <div className="flex-1 flex justify-end space-x-6">
       {session ? (
         <button
           onClick={handleLogout}
-          className="bg-red-600 text-white px-4 py-2 rounded"
+          className="bg-transparent hover:text-gray-300 text-white px-4 py-2 rounded-full border-2"
         >
           Logout
         </button>
       ) : (
         <button
           onClick={handleLogin}
-          className="bg-blue-600 text-white px-4 py-2 rounded"
+          className="bg-transparent hover:text-gray-300 text-white px-4 py-2 rounded-full border-2"
         >
-          Login with Google
+          Login
         </button>
       )}
     </div>
