@@ -39,16 +39,18 @@ const Auth = () => {
       {session ? (
         <button
           onClick={handleLogout}
-          className="bg-transparent hover:text-gray-300 text-white px-4 py-2 rounded-full border-2"
+          className="rounded-full border border-white/10 flex justify-center items-center gap-x-2 py-2 px-4
+          bg-white/5 hover:scale-110 hover:bg-white/10 hover:shadow-lg transition-all duration-300 ease-in-out"
         >
-          Logout
+          sign out
         </button>
       ) : (
         <button
           onClick={handleLogin}
-          className="bg-transparent hover:text-gray-300 text-white px-4 py-2 rounded-full border-2"
+          className="rounded-full border border-white/10 flex justify-center items-center gap-x-2 py-2 px-4
+          bg-white/5 hover:scale-110 hover:bg-white/10 hover:shadow-lg transition-all duration-300 ease-in-out"
         >
-          Login
+          sign in
         </button>
       )}
     </div>
