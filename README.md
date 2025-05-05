@@ -2,6 +2,8 @@
 
 **FileConverter** is a web application that allows you to convert files between multiple formats such as HTML, CSV, PDF, and DOCX. It uses the ConvertAPI to perform conversions directly from the browser, without the need for a backend or local installations, helping to reduce costs and development time.
 
+App create for Angel Aquino
+
 ![FileConverter Banner](public/convertImage.png)
 
 ## 🚀 Features
