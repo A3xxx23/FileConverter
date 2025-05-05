@@ -1,54 +1,53 @@
-# React + TypeScript + Vite
+# 📄 FileConverter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**FileConverter** is a web application that allows you to convert files between multiple formats such as HTML, CSV, PDF, and DOCX. It uses the ConvertAPI to perform conversions directly from the browser, without the need for a backend or local installations, helping to reduce costs and development time.
 
-Currently, two official plugins are available:
+![FileConverter Banner](public/convertImage.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ✅ HTML to PDF conversion
+- ✅ CSV to PDF conversion
+- ✅ PDF to DOCX conversion
+- ✅ DOCX/DOC to PDF conversion
+- ✅ User-friendly drag-and-drop interface
+- ✅ Image preview
+- ✅ Success/error notifications with `react-hot-toast`
+- ✅ Responsive design with TailwindCSS
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧪 Technologies used
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [FilePond](https://pqina.nl/filepond/)
+- [ConvertAPI](https://www.convertapi.com/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [React Hot Toast](https://react-hot-toast.com/)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📦 Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Clone the repository:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+git clone https://github.com/a3xxx23/FileConverter.git
+cd file-converter
+
+2. Install the dependencies:
+
+npm install
+
+3. Create an .env file and add your ConvertAPI key:
+
+VITE_PROJECT_URL_SUPABASE = supabase_key
+
+VITE_SUPABASE_API_KEY = api_key
+
+VITE_CONVERTAPI_KEY = convertapi_key
+
+4. Run the application:
+
+npm run dev
+
+5. Open your browser and navigate to http://localhost:5173/ to see the application in action.
+
+
+
