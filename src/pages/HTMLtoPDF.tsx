@@ -5,7 +5,7 @@ export const HTMLtoPDF = () => {
         <FileUpload
         title="HTML to PDF"
         description="Convert HTML to PDF in the best app out there. you can convert HTML to PDF in seconds."
-        accept={['.html']}
+        accept={['text/html']}
         maxFileSize="10000000"
         onConvert={() => console.log("Convert to PDF")} 
         />
