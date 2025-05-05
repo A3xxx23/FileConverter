@@ -1,15 +1,15 @@
 import { FileUpload } from "../components/FileUpload"
 
-export const HTMLtoImage = () => {
+export const PDFtoDocx = () => {
     return (
         <FileUpload
-        title="HTML to Image"
+        title="PDF to Docx"
         description="Convert image to PDF in the best app out there. you can convert HTML to Image in seconds." 
-        accept={['text/html']}
-        maxFileSize="10000000"
-        onConvert={() => console.log("Convert to Image")}        
+        accept={['application/pdf']}
+        maxFileSize="200MB"
+        onConvert={() => console.log("Convert to Docx")}        
         />
     )
 }
 
-export default HTMLtoImage
+export default PDFtoDocx;
