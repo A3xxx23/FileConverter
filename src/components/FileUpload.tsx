@@ -75,7 +75,7 @@ export const FileUpload = ({ title, description, accept, maxFileSize = '200MB', 
         // Docx a PDF
         result = await convertApi.convert('docx', 'pdf', params);
         console.log('File converted from Docx to PDF:', result);
-        toast.error('Error converting file!', {
+        toast.success('Error converting file!', {
           position: 'bottom-center',
           duration: 5000,
       });
