@@ -4,9 +4,9 @@ import { useState } from "react";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 
 const navbarLinks = [
-  { id: 1, title: 'File to PDF', href: '/file-to-pdf' },
-  { id: 2, title: 'URL to PDF', href: '/url-to-pdf' },
-  { id: 3, title: 'Image to PDF', href: '/image-to-pdf' },
+  { id: 1, title: 'Input to PDF', href: '/input-to-pdf' },
+  { id: 2, title: 'PDF to Image', href: '/pdf-to-image' },
+  { id: 3, title: 'HTML to Image', href: '/html-to-image' },
   { id: 4, title: 'HTML to PDF', href: '/html-to-pdf' },
 ];
 
