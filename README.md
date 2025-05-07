@@ -16,6 +16,7 @@ Application created by Angel Emilio Aquino
 - ✅ Image preview
 - ✅ Success/error notifications with `react-hot-toast`
 - ✅ Responsive design with TailwindCSS
+- ✅ Login con Google de manera opcional
 
 ## 🧪 Technologies used
 
