@@ -27,6 +27,9 @@ const Auth = () => {
   const handleLogin = async () => {
     await supabase.auth.signInWithOAuth({
       provider: 'google',
+      options: {
+        redirectTo: 'https://a3fileconverter.netlify.app'
+      }
     });
   };
 
