@@ -1,6 +1,6 @@
 export const Hero = () => {
   return (
-    <main className="flex-1 flex flex-col items-center justify-center text-center px-4 py-32">
+    <main className="flex-1 flex flex-col items-center justify-center text-center px-4 py-10">
     <img
           src="/convertHero.png"
           alt="FileConverter logo"
